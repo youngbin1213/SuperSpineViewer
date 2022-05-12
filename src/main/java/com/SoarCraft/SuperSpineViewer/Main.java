@@ -20,9 +20,11 @@ public class Main extends Application {
         Scene scene = new Scene(root);
         scene.setFill(Color.TRANSPARENT);
 
-        primaryStage.initStyle(StageStyle.TRANSPARENT);
+        primaryStage.initStyle(StageStyle.DECORATED);
         primaryStage.setScene(scene);
-        primaryStage.setTitle("SuperSpineViewer v2 - Aloento");
+        primaryStage.setTitle("SuperSpineViewer v2.0.1 - Aloento");
+        primaryStage.setMinWidth(640);
+        primaryStage.setMinHeight(360);
         primaryStage.show();
     }
 }
