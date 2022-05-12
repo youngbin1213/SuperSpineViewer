@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    id("org.openjfx.javafxplugin") version ("0.0.13")
 }
 
 group = "com.SoarCraft.SuperSpineViewer"
@@ -10,10 +11,10 @@ repositories {
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
+    implementation("io.github.palexdev:materialfx:11.13.5")
 }
 
-tasks.getByName<Test>("test") {
-    useJUnitPlatform()
+javafx {
+    version = "18"
+    modules("javafx.controls", "javafx.fxml", "javafx.media")
 }
