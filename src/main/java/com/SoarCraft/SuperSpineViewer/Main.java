@@ -10,7 +10,6 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class Main extends Application {
-
     @Override
     public void start(Stage primaryStage) throws Exception {
         FXMLLoader loader = new FXMLLoader(ResourcesLoader.LoadURL("main.fxml"));
@@ -22,7 +21,7 @@ public class Main extends Application {
 
         primaryStage.initStyle(StageStyle.DECORATED);
         primaryStage.setScene(scene);
-        primaryStage.setTitle("SuperSpineViewer v2.0.1 - Aloento");
+        primaryStage.setTitle("SuperSpineViewer v2.0.0 - Aloento");
         primaryStage.setMinWidth(640);
         primaryStage.setMinHeight(360);
         primaryStage.show();
